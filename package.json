@@ -1,0 +1,16 @@
+{
+  "name": "mf-vite-env-target-repro",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "defines": "node print-defines.mjs",
+    "build": "vite build",
+    "start": "node run.mjs",
+    "repro": "npm run defines && npm run build && npm start"
+  },
+  "devDependencies": {
+    "@module-federation/runtime": "2.9.2",
+    "@module-federation/vite": "1.23.1",
+    "vite": "8.3.2"
+  }
+}
